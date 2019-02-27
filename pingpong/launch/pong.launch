@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+<node name="$(anon pong)" type="pingpong_node" pkg="pingpong" output="screen">
+<param name="start" type="bool" value="false"/>
+<param name="id" type="int" value="$(optenv ID 1)" />
+</node>
+</launch>
